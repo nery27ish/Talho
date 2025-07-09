@@ -4,7 +4,7 @@ import produtos
 
 encomendas = []
 
-def registar_encomendas():
+def registar_encomenda():
     if not produtos.produtos:
         print("Não existem produtos disponíveis para encomenda!")
         return
@@ -23,6 +23,7 @@ def registar_encomendas():
             
             if quantidade <= 0:
                 print("Quantidade inválida!")
+                return
                 
             if quantidade > produto["stock"]:
                 print(f"Stock insuficiente! Só há {produto['stock']:.2f}Kg disponíveis.")
@@ -63,7 +64,7 @@ def menu():
         opcao = input("Escolha uma opção: ")
 
         if opcao == "1":
-            registar_encomendas()
+            registar_encomenda()
         elif opcao == "2":
             listar_encomendas()
         elif opcao == "0":
