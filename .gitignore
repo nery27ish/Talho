@@ -1,0 +1,16 @@
+# Ignorar ficheiros e pastas temporárias
+__pycache__/
+*.pyc
+*.pyo
+*.log
+
+# Ignorar ficheiros de base de dados
+*.sqlite3
+*.db
+
+# Ignorar ficheiros de sistema do macOS
+.DS_Store
+
+# Ignorar ficheiros de ambientes virtuais
+.env
+venv/
