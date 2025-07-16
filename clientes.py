@@ -6,7 +6,7 @@ clientes0 = [
     {"nome": "O Marquês", "nif": "", "telefone": "965325870"},
     {"nome": "A Quinta", "nif": "", "telefone": ""},
     {"nome": "Calinas", "nif": "", "telefone": ""},
-    {"nome": "Elisabete", "nif": "", "telefone": ""},
+    {"nome": "Elisabete", "nif": "122034481", "telefone": ""},
     {"nome": "Baleia", "nif": "", "telefone": "918027877"},
 ]
 
@@ -27,7 +27,7 @@ def adicionar_cliente():
 def listar_clientes():
     if clientes:
         print("\nLista de clientes:")
-    for i, c in enumerate(clientes, 1):
+        for i, c in enumerate(clientes, 1):
             print(f"{i}. {c['nome']} | NIF: {c['nif']} | Tel: {c['telefone']}")
     else:
         print("Não existem clientes registados!")
