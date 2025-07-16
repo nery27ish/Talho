@@ -2,13 +2,27 @@
 
 clientes = []
 
+clientes0 = [
+    {"nome": "O Marquês", "nif": "", "telefone": "965325870"},
+    {"nome": "A Quinta", "nif": "", "telefone": ""},
+    {"nome": "Calinas", "nif": "", "telefone": ""},
+    {"nome": "Elisabete", "nif": "", "telefone": ""},
+    {"nome": "Baleia", "nif": "", "telefone": "918027877"},
+]
+
+clientes.extend(clientes0)
+
 def adicionar_cliente():
     nome = input("Nome do cliente: ").strip()
-    if nome:
-        clientes.append(nome)
-        print(f"Cliente '{nome}' adicionado.")
-    else:
-        print("Nome inválido.")
+    nif = input("NIF: ").strip()
+    telefone = input("Telefone: ").strip()
+    
+    clientes.append({
+        "nome": nome,
+        "nif": nif,
+        "telefone": telefone
+    })
+    print(f"Cliente '{nome}' adicionado.")
 
 def listar_clientes():
     if clientes:
