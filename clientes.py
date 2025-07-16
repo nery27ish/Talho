@@ -27,10 +27,10 @@ def adicionar_cliente():
 def listar_clientes():
     if clientes:
         print("\nLista de clientes:")
-        for i, nome in enumerate(clientes, start=1):
-            print(f"{i}. {nome}")
+    for i, c in enumerate(clientes, 1):
+            print(f"{i}. {c['nome']} | NIF: {c['nif']} | Tel: {c['telefone']}")
     else:
-        print("Ainda não há clientes registados.")
+        print("Não existem clientes registados!")
 
 def menu():
     while True:
