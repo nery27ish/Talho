@@ -9,15 +9,15 @@ FICHEIRO_CSV = "produtos.csv"
 
 # Categorias principais e subcategorias
 categorias = {
-    "Novilho": ["cachaço", "acém", "pá", "maçã", "peito", "chambão", "mão", "lombo", "vazia", "prego do peito", "aba", "alcatra", "chã de fora", "rabadilha", "pojadouro"],
-    "Porco": ["chispe", "perna", "entremeada", "entrecosto", "pá", "cachaço", "costeletas do fundo", "costeletas do pé", "lombo", "cabeça"],
-    "Porco Preto": ["entrecosto", "lagartinhos", "secretos", "plumas", "bochechas"],
-    "Borrego": ["cabeça", "pescoço", "mão", "peito", "costeletas", "perna"],
-    "Aves": ["frango inteiro", "asas", "pernas", "peito", "frango do Campo", "coelho", "codornizes"],
-    "Enchidos": ["chouriço", "chouriço das favas", "morcela", "alheira", "farinheira", "paio porco preto"],
-    "Vinhos": ["tinto", "branco", "rose"],
-    "Queijos": ["amanteigado", "seco de cabra", "manteiga"],
-    "Outros": ["ovos", "mel", "azeite"]
+    "Novilho": ["Cachaço", "Acém", "Pá", "Maçã", "Peito", "Chambão", "Mão", "Lombo", "Vazia", "Prego do Peito", "Aba", "Alcatra", "Chã de Fora", "Rabadilha", "Pojadouro"],
+    "Porco": ["Chispe", "Perna", "Entremeada", "Entrecosto", "Pá", "Cachaço", "Costeletas do Fundo", "Costeletas do Pé", "Lombo", "Cabeça"],
+    "Porco Preto": ["Entrecosto", "Lagartinhos", "Secretos", "Plumas", "Bochechas"],
+    "Borrego": ["Cabeça", "Pescoço", "Mão", "Peito", "Costeletas", "Perna"],
+    "Aves": ["Frango Inteiro", "Asas", "Pernas", "Peito", "Frango do Campo", "Coelho", "Codornizes", "Peito de Peru", "Pernas de Peru"],
+    "Enchidos": ["Chouriço Carne Alentejano", "Chouriço das favas", "Chouriço de Sangue", "Morcela", "Alheira", "Farinheira", "Paio Porco Preto"],
+    "Vinhos": ["Tinto", "Branco", "Rose"],
+    "Queijos": ["Amanteigado", "Seco de Cabra", "Manteiga"],
+    "Outros": ["Ovos", "Mel", "Azeite"]
 }
 
 categorias_kg = ["Novilho", "Porco", "Porco Preto", "Borrego", "Aves", "Enchidos"]
