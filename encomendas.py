@@ -13,13 +13,13 @@ def registar_encomenda():
     
     print("\nProdutos disponíveis:")
     for i, p in enumerate(produtos.produtos, 1):
-        print(f"{i}. {p['nome']} - {p['preco']:.2f}€/kg | {p['stock']:.2f}kg")
+        print(f"{i}. [{p['categoria']}] {p['subcategoria']} - {p['preco']:.2f}€/{p['unidade']} | {p['stock']:.2f}{p['unidade']}")
     
     try:
         escolha = int(input("Escolha o nº do produto: "))
         if 1 <= escolha <= len(produtos.produtos):
             produto = produtos.produtos[escolha - 1]
-            quantidade = float(input(f"Quantidade (kg) de {produto['nome']}: "))
+            quantidade = float(input(f"Quantidade ({produto['unidade']}) de {produto['subcategoria']}: "))
             
             if quantidade <= 0:
                 print("Quantidade inválida!")
@@ -33,12 +33,12 @@ def registar_encomenda():
             produto["stock"] -= quantidade
             encomendas.append({
                 "cliente": cliente,
-                "produto": produto["nome"],
+                "produto": produto["subcategoria"],
                 "quantidade": quantidade,
                 "total": total
             })
             
-            print(f"Encomenda de {cliente} registada - {quantidade:.2f}Kg de {produto['nome']} ({total:.2f}€)")
+            print(f"Encomenda de {cliente} registada - {quantidade:.2f}{produto['unidade']} de {produto['subcategoria']} ({total:.2f}€)")
             
         else:
             print("Produto inválido!")
